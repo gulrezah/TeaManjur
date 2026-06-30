@@ -20,20 +20,40 @@
 }
 
 @layer components {
+    .site-container {
+        @apply mx-auto max-w-7xl px-5 lg:px-8;
+    }
+
     .nav-link {
-        @apply transition hover:text-cyan-200;
+        @apply rounded-md px-3 py-2 text-slate-300 transition hover:bg-white/5 hover:text-white;
+    }
+
+    .nav-link-active {
+        @apply rounded-md bg-white/10 px-3 py-2 text-white shadow-sm;
+    }
+
+    .nav-cta {
+        @apply ml-2 rounded-md bg-orange-500 px-4 py-2 font-semibold text-white shadow-sm shadow-orange-950/20 transition hover:bg-orange-400;
+    }
+
+    .nav-cta-active {
+        @apply ml-2 rounded-md bg-white px-4 py-2 font-semibold text-slate-950 shadow-sm;
     }
 
     .mobile-nav-link {
         @apply block rounded-md px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10 hover:text-white;
     }
 
+    .mobile-nav-link-active {
+        @apply block rounded-md bg-white/10 px-4 py-3 text-sm font-semibold text-white;
+    }
+
     .btn-primary {
-        @apply inline-flex items-center justify-center rounded-md bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300;
+        @apply inline-flex items-center justify-center rounded-md bg-orange-500 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-950/20 transition hover:bg-orange-400;
     }
 
     .btn-secondary {
-        @apply inline-flex items-center justify-center rounded-md border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:border-cyan-200 hover:text-cyan-100;
+        @apply inline-flex items-center justify-center rounded-md border border-white/20 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:border-cyan-200 hover:bg-white/10 hover:text-cyan-100;
     }
 
     .page-hero {
@@ -41,7 +61,7 @@
     }
 
     .eyebrow {
-        @apply text-sm font-semibold uppercase tracking-wide text-cyan-200;
+        @apply text-sm font-semibold uppercase tracking-wide text-orange-200;
     }
 
     .page-title {
@@ -78,5 +98,69 @@
 
     .form-input {
         @apply w-full rounded-md border border-slate-300 bg-slate-50 px-4 py-3 text-slate-700 outline-none;
+    }
+
+    .footer-heading {
+        @apply text-sm font-semibold uppercase tracking-wide text-orange-200;
+    }
+
+    .footer-chip {
+        @apply rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300;
+    }
+
+    .section-white {
+        @apply bg-white px-5 py-16 text-slate-950 lg:px-8 lg:py-20;
+    }
+
+    .section-tint {
+        @apply bg-slate-50 px-5 py-16 text-slate-950 lg:px-8 lg:py-20;
+    }
+
+    .section-dark {
+        @apply bg-slate-950 px-5 py-16 text-white lg:px-8 lg:py-20;
+    }
+
+    .section-heading {
+        @apply max-w-3xl;
+    }
+
+    .section-eyebrow {
+        @apply text-sm font-semibold uppercase tracking-wide text-orange-600;
+    }
+
+    .section-copy {
+        @apply mt-5 max-w-3xl text-lg leading-8 text-slate-600;
+    }
+
+    .premium-card {
+        @apply rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/70;
+    }
+
+    .feature-tile {
+        @apply rounded-lg border border-slate-200 bg-white p-5 text-sm font-semibold text-slate-800 shadow-sm;
+    }
+
+    .hero-slide {
+        @apply absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out;
+    }
+
+    .hero-slide-active {
+        @apply relative z-10 opacity-100;
+    }
+
+    .hero-stat {
+        @apply rounded-md border border-white/10 bg-white/10 p-3 backdrop-blur;
+    }
+
+    .hero-arrow {
+        @apply flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-slate-950/60 text-xl font-semibold text-white shadow-lg backdrop-blur transition hover:border-orange-300 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-300;
+    }
+
+    .hero-dot {
+        @apply h-2.5 w-2.5 rounded-full bg-white/40 transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-orange-300;
+    }
+
+    .hero-dot-active {
+        @apply w-9 bg-orange-400;
     }
 }
