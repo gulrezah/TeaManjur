@@ -10,6 +10,7 @@ class AppScreenshot extends Model
 {
     protected $fillable = [
         'app_id',
+        'title',
         'image',
         'alt_text',
         'sort_order',

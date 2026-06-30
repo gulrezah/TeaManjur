@@ -12,7 +12,7 @@
     <section class="content-band">
         <div class="grid gap-6 md:grid-cols-3">
             @foreach ([
-                ['How Laravel fits growing business websites', 'A practical look at why Laravel works well for content, admin, and workflow-heavy sites.'],
+                ['How modern web stacks fit growing business websites', 'A practical look at choosing the right technologies for content, admin, and workflow-heavy sites.'],
                 ['Where to start with AI integration', 'Simple ways to identify AI opportunities that are useful instead of distracting.'],
                 ['Preparing an app promotion page', 'The core pieces every App Store app page should include before launch.'],
             ] as [$title, $copy])

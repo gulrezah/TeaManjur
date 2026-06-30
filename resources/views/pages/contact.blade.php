@@ -6,7 +6,7 @@
     <section class="page-hero">
         <p class="eyebrow">Contact</p>
         <h1 class="page-title">Let us plan your next digital project.</h1>
-        <p class="page-copy">Tell TeaManjur what you want to build: a website, Laravel system, AI workflow, business automation, or App Store promotion page.</p>
+        <p class="page-copy">Tell TeaManjur what you want to build: a website, web application, AI workflow, business automation, or App Store promotion page.</p>
     </section>
 
     <section class="content-band">

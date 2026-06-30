@@ -31,4 +31,9 @@ class PageController extends Controller
     {
         return view('pages.portfolio.index');
     }
+
+    public function privacyPolicy(): View
+    {
+        return view('pages.privacy-policy');
+    }
 }

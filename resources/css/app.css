@@ -163,4 +163,22 @@
     .hero-dot-active {
         @apply w-9 bg-orange-400;
     }
+
+    .news-ticker-track {
+        animation: news-ticker-scroll 34s linear infinite;
+    }
+
+    .news-ticker-track:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes news-ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }

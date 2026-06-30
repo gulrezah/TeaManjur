@@ -13,6 +13,7 @@ Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/ai-solutions', [PageController::class, 'aiSolutions'])->name('ai-solutions');
 Route::get('/web-development', [PageController::class, 'webDevelopment'])->name('web-development');
 Route::get('/portfolio', [PageController::class, 'portfolio'])->name('portfolio.index');
+Route::get('/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/apps', [AppController::class, 'index'])->name('apps.index');
 Route::get('/apps/{slug}', [AppController::class, 'show'])->name('apps.show');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');

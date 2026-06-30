@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', 'Web Development, AI Integration, Laravel Solutions, and Apps')
+@section('title', 'Web Development, AI Integration, Multi-Technology Solutions, and Apps')
 
 @section('content')
     <section class="relative overflow-hidden bg-slate-950" data-hero-slider tabindex="0">
@@ -9,7 +9,7 @@
                 [
                     'eyebrow' => 'TeaManjur Digital Solutions',
                     'title' => 'Build a sharper digital business with TeaManjur.',
-                    'copy' => 'Professional websites, Laravel applications, AI workflows, automation, and app promotion built for companies that want dependable execution.',
+                    'copy' => 'Professional websites, web applications, AI workflows, automation, and app promotion built for companies that want dependable execution.',
                     'primary' => ['label' => 'Start a project', 'route' => 'contact'],
                     'secondary' => ['label' => 'Explore services', 'route' => 'services'],
                     'image' => 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=80',
@@ -17,12 +17,12 @@
                 ],
                 [
                     'eyebrow' => 'Web Development',
-                    'title' => 'Modern Laravel websites designed for trust and growth.',
-                    'copy' => 'From polished company pages to scalable Laravel foundations, TeaManjur turns your digital presence into a clear client acquisition channel.',
+                    'title' => 'Modern web platforms designed for trust and growth.',
+                    'copy' => 'From polished company pages to scalable multi-technology foundations, TeaManjur turns your digital presence into a clear client acquisition channel.',
                     'primary' => ['label' => 'See web development', 'route' => 'web-development'],
                     'secondary' => ['label' => 'View portfolio', 'route' => 'portfolio.index'],
                     'image' => 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80',
-                    'metric' => 'Laravel-first',
+                    'metric' => 'Full-stack',
                 ],
                 [
                     'eyebrow' => 'AI Integration',
@@ -129,16 +129,24 @@
 
     <section class="section-white">
         <div class="site-container">
-            <div class="section-heading">
-                <p class="section-eyebrow">Services Preview</p>
-                <h2 class="section-title">Everything a modern IT company website should communicate clearly.</h2>
-                <p class="section-copy">TeaManjur brings together technical execution and business clarity, so clients can understand what you do and take action quickly.</p>
+            <div class="grid gap-8 lg:grid-cols-[0.78fr_0.22fr] lg:items-end">
+                <div class="section-heading">
+                    <p class="section-eyebrow">Services Preview</p>
+                    <h2 class="section-title">Everything a modern IT company website should communicate clearly.</h2>
+                    <p class="section-copy">TeaManjur brings together technical execution and business clarity, so clients can understand what you do and take action quickly.</p>
+                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+                    alt="Team planning digital services"
+                    class="hidden aspect-[4/3] w-full rounded-lg border border-slate-200 object-cover shadow-sm lg:block"
+                    loading="lazy"
+                >
             </div>
             <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
                 @foreach ([
                     ['Web Development', 'Professional websites, landing pages, and content structures for growing companies.', '01'],
                     ['AI Integration', 'Smart assistants, intake flows, and workflow helpers that reduce manual effort.', '02'],
-                    ['Laravel Solutions', 'Custom apps, admin-ready systems, dashboards, APIs, and maintainable backends.', '03'],
+                    ['Web App Solutions', 'Custom apps, admin-ready systems, dashboards, APIs, and maintainable backends.', '03'],
                     ['Business Automation', 'Lead handling, reporting, operational tasks, and repeatable process automation.', '04'],
                 ] as [$title, $copy, $number])
                     <article class="premium-card">
@@ -159,10 +167,18 @@
                 <p class="section-copy">From lead qualification to internal knowledge workflows, we shape AI features around practical outcomes instead of novelty.</p>
                 <a class="mt-7 inline-flex text-sm font-semibold text-orange-700 hover:text-orange-900" href="{{ route('ai-solutions') }}">Explore AI solutions</a>
             </div>
-            <div class="grid gap-4 sm:grid-cols-2">
-                @foreach (['Support assistants', 'Lead scoring', 'Content workflows', 'Knowledge search', 'Report summaries', 'Smart intake forms'] as $item)
-                    <div class="feature-tile">{{ $item }}</div>
-                @endforeach
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1100&q=80"
+                    alt="AI workflow visualization"
+                    class="mb-4 aspect-[16/7] w-full rounded-lg border border-slate-200 object-cover shadow-sm"
+                    loading="lazy"
+                >
+                <div class="grid gap-4 sm:grid-cols-2">
+                    @foreach (['Support assistants', 'Lead scoring', 'Content workflows', 'Knowledge search', 'Report summaries', 'Smart intake forms'] as $item)
+                        <div class="feature-tile">{{ $item }}</div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </section>
@@ -171,10 +187,16 @@
         <div class="site-container grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div class="order-2 lg:order-1">
                 <div class="grid gap-4">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1100&q=80"
+                        alt="Web development workspace"
+                        class="aspect-[16/8] w-full rounded-md border border-white/10 object-cover shadow-2xl shadow-slate-950/40"
+                        loading="lazy"
+                    >
                     @foreach ([
                         ['Responsive Blade UI', 'Fast pages with maintainable Tailwind components.'],
                         ['Filament-ready content', 'Frontend sections designed to connect with admin modules later.'],
-                        ['Laravel foundations', 'Routes, controllers, views, and future database models kept clean.'],
+                        ['Multi-stack foundations', 'Routes, controllers, views, APIs, and future database models kept clean.'],
                     ] as [$title, $copy])
                         <div class="rounded-md border border-white/10 bg-white/5 p-5">
                             <h3 class="font-semibold text-white">{{ $title }}</h3>
@@ -185,8 +207,8 @@
             </div>
             <div class="order-1 lg:order-2">
                 <p class="section-eyebrow">Web Development</p>
-                <h2 class="mt-4 text-3xl font-semibold tracking-normal text-white md:text-5xl">Laravel websites built for growth, not just launch day.</h2>
-                <p class="mt-5 text-lg leading-8 text-slate-300">TeaManjur uses a simple, scalable Laravel structure so today's static pages can become tomorrow's CMS-driven website, app catalog, blog, and portfolio.</p>
+                <h2 class="mt-4 text-3xl font-semibold tracking-normal text-white md:text-5xl">Multi-technology websites built for growth, not just launch day.</h2>
+                <p class="mt-5 text-lg leading-8 text-slate-300">TeaManjur uses simple, scalable web architecture so today's static pages can become tomorrow's CMS-driven website, app catalog, blog, and portfolio.</p>
                 <a class="mt-7 inline-flex text-sm font-semibold text-orange-300 hover:text-orange-200" href="{{ route('web-development') }}">See web development</a>
             </div>
         </div>
@@ -200,18 +222,26 @@
                 <p class="section-copy">Showcase each iOS app with a polished listing, feature highlights, support context, and App Store-ready messaging.</p>
                 <a class="btn-primary mt-7" href="{{ route('apps.index') }}">Visit apps section</a>
             </div>
-            <div class="grid gap-5 sm:grid-cols-3">
-                @foreach ([
-                    ['Tenvir', 'Productivity'],
-                    ['Kids Learning App', 'Education'],
-                    ['Business Utility App', 'Business'],
-                ] as [$name, $type])
-                    <article class="rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-sm">
-                        <div class="flex h-14 w-14 items-center justify-center rounded-lg bg-orange-100 text-lg font-semibold text-orange-700">{{ substr($name, 0, 1) }}</div>
-                        <h3 class="mt-5 font-semibold text-slate-950">{{ $name }}</h3>
-                        <p class="mt-2 text-sm text-slate-500">{{ $type }}</p>
-                    </article>
-                @endforeach
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1100&q=80"
+                    alt="Mobile apps on smartphone"
+                    class="mb-5 aspect-[16/7] w-full rounded-lg border border-slate-200 object-cover shadow-sm"
+                    loading="lazy"
+                >
+                <div class="grid gap-5 sm:grid-cols-3">
+                    @foreach ([
+                        ['Tenvir', 'Productivity'],
+                        ['Kids Learning App', 'Education'],
+                        ['Business Utility App', 'Business'],
+                    ] as [$name, $type])
+                        <article class="rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-sm">
+                            <div class="flex h-14 w-14 items-center justify-center rounded-lg bg-orange-100 text-lg font-semibold text-orange-700">{{ substr($name, 0, 1) }}</div>
+                            <h3 class="mt-5 font-semibold text-slate-950">{{ $name }}</h3>
+                            <p class="mt-2 text-sm text-slate-500">{{ $type }}</p>
+                        </article>
+                    @endforeach
+                </div>
             </div>
         </div>
     </section>
@@ -227,7 +257,7 @@
                 @foreach ([
                     ['Company Website', 'A polished services site with a fast contact path and clear brand positioning.'],
                     ['AI Workflow Tool', 'A practical assistant concept for summarizing requests and routing leads.'],
-                    ['Laravel Dashboard', 'A business control panel concept for content, leads, apps, and reporting.'],
+                    ['Business Dashboard', 'A business control panel concept for content, leads, apps, and reporting.'],
                 ] as [$title, $copy])
                     <article class="premium-card">
                         <p class="text-sm font-semibold uppercase tracking-wide text-cyan-700">Case study</p>
@@ -249,7 +279,7 @@
                 @foreach ([
                     ['Business-first thinking', 'Every section, route, and feature supports client trust and conversion.'],
                     ['AI-ready structure', 'Pages and workflows are designed for future automation and smart features.'],
-                    ['Laravel discipline', 'A maintainable foundation that can grow into admin-managed content.'],
+                    ['Engineering discipline', 'A maintainable foundation that can grow into admin-managed content.'],
                     ['App promotion built in', 'TeaManjur.com can support company services and App Store products together.'],
                 ] as [$title, $copy])
                     <div class="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
@@ -270,7 +300,7 @@
             <div class="mt-10 grid gap-6 md:grid-cols-3">
                 @foreach ([
                     ['TeaManjur made our service offering feel sharper and easier to understand.', 'Founder, Digital Services'],
-                    ['The Laravel-first approach gave us confidence that the website can grow with our operations.', 'Operations Lead'],
+                    ['The technology-flexible approach gave us confidence that the website can grow with our operations.', 'Operations Lead'],
                     ['The app promotion flow gives every product a polished home before users reach the App Store.', 'Product Owner'],
                 ] as [$quote, $name])
                     <figure class="rounded-lg border border-white/10 bg-white/5 p-6">
